@@ -85,7 +85,7 @@ function onFormSubmit(event) {
 
 // 3 пример 41 минута события инпутов
 
-/*const refs = {
+const refs = {
     input: document.querySelector('.js-input'),
     // для 1 задания  nameLabel
     nameLabel: document.querySelector('.js-button > span'),
@@ -95,8 +95,8 @@ function onFormSubmit(event) {
 }
 //refs.input.addEventListener('focus', onInputFocus); //получил фокус
 //refs.input.addEventListener('blur', onInputBlur); //потерял фокус
-//refs.input.addEventListener('change', onInputChange);
-//refs.input.addEventListener('input', onInputChange);
+refs.input.addEventListener('change', onInputChange);
+refs.input.addEventListener('input', onInputChange);
 
 // 1 задание делаем так что бы вместо анонима писалось имя
 // input для текстовых полей
@@ -106,12 +106,12 @@ refs.input.addEventListener('input', onInputChange);
 // Change радиобатонов и чекбоксов
 refs.licenseCheckbox.addEventListener('change', onLicenseChange);
 
-function onInputFocus() {
+/*function onInputFocus() {
     console.log('Инпут получил фокус - событие focus');
 }
 function onInputBlur() {
     console.log('Инпут потерял фокус - событие dlur');
-}
+}*/
 
 function onInputChange(event) { //value у инпутов
     refs.nameLabel.textContent = event.currentTarget.value;
@@ -119,7 +119,7 @@ function onInputChange(event) { //value у инпутов
 
 function onLicenseChange(event) { //checked у чекбоксов и радиобатонов
     refs.btn.disabled = !event.currentTarget.checked;
-}*/
+}
 
 
 // 4 события клавиатуры 56 мин
@@ -152,7 +152,7 @@ function onClearOutput() {
     // mouseover и mouseout
     // mousemove (chatty event - болтливое событие)
 
-const boxRef = document.querySelector('.js-box');
+/*const boxRef = document.querySelector('.js-box');
 
 //boxRef.addEventListener('mouseenter', onMouseEnter);
 //boxRef.addEventListener('mouseleave', onMouseLeave);
@@ -171,7 +171,7 @@ function onMouseLeave(event) {
 function onMouseMove(event) {
     console.log(event);
 }
+*/
 
 
-// 6 мастерская модальное окно мин
 
